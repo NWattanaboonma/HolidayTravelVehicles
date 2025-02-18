@@ -21,8 +21,11 @@ jobs:
       with:
         java-version: '11' # You can change this to the version you want
 
-    - name: Compile Java
+    - name: Compile Java Files
       run: |
-        cd main
         javac -d . *.java
+
+    - name: Run Java Program
+      run: |
+        java main
       # Compile java file from directory
